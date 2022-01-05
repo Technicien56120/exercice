@@ -8,6 +8,8 @@ class DossApp extends StatefulWidget {
 }
 
 class _DossAppState extends State<DossApp> {
+  get label => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -213,7 +215,7 @@ class _DossAppState extends State<DossApp> {
               ],
             ),
             SizedBox(
-              height: 15,
+              height: 30.0,
             ),
             Text(
               "Les participants consultent",
@@ -222,6 +224,12 @@ class _DossAppState extends State<DossApp> {
                   fontWeight: FontWeight.bold,
                   fontSize: 25),
             ),
+            SizedBox(
+              height: 15.0,
+            ),
+            //Les images après la phrase "Les participants consultent" que j'appelle deuxième partie.
+            ////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -229,11 +237,11 @@ class _DossAppState extends State<DossApp> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Image.network(
-                      'https://ichi.pro/assets/images/max/724/1*oUvprT47EOZloGbXyoi9MA.jpeg',
+                      'https://www.nglesson.com/assets/imgs/img_articles/solutiontechniques/JavaScript.jpg',
                       height: 110,
                     ),
                     Text(
-                      "Devenez un expert\n\du web scraping - la\nformation complète",
+                      "The Complete\n\JvaScript Cours\n2022:From Zero t...",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -243,7 +251,7 @@ class _DossAppState extends State<DossApp> {
                       height: 5,
                     ),
                     Text(
-                      "Sébastien Daviot",
+                      "Jonas Schmedtmann",
                       style: TextStyle(color: Colors.grey),
                     ),
                     SizedBox(
@@ -261,31 +269,12 @@ class _DossAppState extends State<DossApp> {
                           style: TextStyle(color: Colors.amber, fontSize: 30),
                         ),
                         const Text(
-                          "(81)",
+                          "(123420)",
                           style: TextStyle(color: Colors.grey, fontSize: 20),
                         ),
                       ],
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "9,99 FCFA",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          "84,99 FCFA",
-                          style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              color: Colors.grey),
-                        ),
-                      ],
-                    ),
+
                     //1er bouton Flat
                     // RaisedButton(
                     //     color: Colors.yellowAccent,
@@ -294,15 +283,6 @@ class _DossAppState extends State<DossApp> {
                     //       "Meilleure vente",
                     //       style: TextStyle(color: Colors.black),
                     //     ))
-                    ButtonTheme(
-                      minWidth: 30.0,
-                      height: 30.0,
-                      child: RaisedButton(
-                        color: Colors.yellowAccent,
-                        onPressed: () {},
-                        child: Text("Meilleure Vente"),
-                      ),
-                    )
                   ],
                 ),
                 Column(
@@ -310,13 +290,13 @@ class _DossAppState extends State<DossApp> {
                     Container(
                       child: Card(
                         child: Image.network(
-                          "https://www.filepicker.io/api/file/ehF168CDSNeXmqIFT260",
+                          "https://static.alphorm.com/bgplayer/FR_599/FR_599_bg_player_large.png",
                           height: 110,
                         ),
                       ),
                     ),
                     Text(
-                      "Formation complète\n\ développeur\n\ Front-End",
+                      "Microsoft Excel-\nExcel from\n\ Front-End",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,
@@ -349,26 +329,7 @@ class _DossAppState extends State<DossApp> {
                         ),
                       ],
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "9,99 FCFA",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          "84,99 FCFA",
-                          style: TextStyle(
-                              decoration: TextDecoration.lineThrough,
-                              color: Colors.grey),
-                        ),
-                      ],
-                    ),
+
                     // RaisedButton(
                     //     color: Colors.yellowAccent,
                     //     onPressed: () {},
@@ -376,16 +337,6 @@ class _DossAppState extends State<DossApp> {
                     //       "Meilleure vente",
                     //       style: TextStyle(color: Colors.black),
                     //     ))
-
-                    ButtonTheme(
-                      minWidth: 30.0,
-                      height: 30.0,
-                      child: RaisedButton(
-                        color: Colors.yellowAccent,
-                        onPressed: () {},
-                        child: Text("Meilleure Vente"),
-                      ),
-                    )
                   ],
                 )
               ],
@@ -393,6 +344,120 @@ class _DossAppState extends State<DossApp> {
           ],
           //gdhdjdikddeeioeieieueueeeyeyeh
         ),
+      ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   backgroundColor: Colors.black,
+      //   items: const <BottomNavigationBarItem>[
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.star),
+      //       label: 'Sélection',
+      //       backgroundColor: Colors.black,
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.search),
+      //       label: 'Rechercher',
+
+      //       // backgroundColor: Colors.green,
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.play_circle_outlined),
+      //       label: 'Mon apprentissage',
+      //       backgroundColor: Colors.purple,
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.favorite_border_outlined),
+      //       label: 'Liste de souhaits',
+      //       backgroundColor: Colors.pink,
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.account_circle_outlined),
+      //       label: 'Compte',
+      //       backgroundColor: Colors.pink,
+      //     ),
+      //   ],
+      //   currentIndex: selectedIndex,
+      //   selectedItemColor: Colors.amber[800],
+      //    onTap: onItemTapped,
+      //),
+      // bottomNavigationBar: Row(
+      //   children: [
+      //     Container(
+      //       child: Icon(
+      //         Icons.star,
+      //         color: Colors.white,
+      //       ),
+      //     ),
+      //     Spacer(),
+      //     Container(
+      //       child: Icon(
+      //         Icons.search,
+      //         color: Colors.grey,
+      //       ),
+      //     ),
+      //     Spacer(),
+      //     Container(
+      //       child: Icon(
+      //         Icons.play_circle_outline,
+      //         color: Colors.grey,
+      //       ),
+      //     ),
+      //     Spacer(),
+      //     Container(
+      //       child: Icon(
+      //         Icons.favorite_border_outlined,
+      //         color: Colors.grey,
+      //       ),
+      //     ),
+      //     Spacer(),
+      //     Container(
+      //       child: Icon(
+      //         Icons.account_circle_outlined,
+      //         color: Colors.grey,
+      //       ),
+      //     ),
+      //   ],
+      // ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        // selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        currentIndex: 4,
+        backgroundColor: Colors.black,
+        items: [
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.star, color: Colors.white),
+            title: new Text(
+              "Sélection",
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+          ),
+          BottomNavigationBarItem(
+              icon: new Icon(Icons.search, color: Colors.grey),
+              title: new Text(
+                "Rechercher",
+                style: TextStyle(color: Colors.grey),
+              )),
+          BottomNavigationBarItem(
+              icon: new Icon(Icons.play_circle_outline, color: Colors.grey),
+              title: new Text(
+                "Mon apprentissage",
+                style: TextStyle(color: Colors.grey),
+              )),
+          BottomNavigationBarItem(
+              icon:
+                  new Icon(Icons.favorite_border_outlined, color: Colors.grey),
+              title: new Text(
+                "Liste de souhaits",
+                style: TextStyle(color: Colors.grey),
+              )),
+          BottomNavigationBarItem(
+              icon: new Icon(Icons.account_circle_outlined, color: Colors.grey),
+              title: new Text(
+                "Compte",
+                style: TextStyle(color: Colors.grey),
+              ))
+        ],
       ),
     );
   }
